@@ -1,0 +1,1255 @@
+Generation 1:
+    Best solution: [ 9.41611964 -0.46684721 -0.02819546 -1.21623833  0.73716969]
+    Fitness value: [0.15675716 0.20107752 1.        ]
+    Index: 0
+
+Generation 2:
+    Best solution: [ 8.9247155   0.1653818   0.49106331 -0.21644829 -1.55776603]
+    Fitness value: [0.26556481 0.19785343 1.        ]
+    Index: 3
+
+Generation 3:
+    Best solution: [ 8.9247155   0.1653818   0.49106331 -0.21644829 -1.55776603]
+    Fitness value: [0.26556481 0.19785343 1.        ]
+    Index: 0
+
+Generation 4:
+    Best solution: [ 9.41611964 -0.65225607 -0.02819546  0.93333661 -0.70570084]
+    Fitness value: [0.29208244 0.34750612 1.        ]
+    Index: 0
+
+Generation 5:
+    Best solution: [ 9.41611964 -0.65225607 -0.02819546  0.93333661 -0.70570084]
+    Fitness value: [0.29208244 0.34750612 1.        ]
+    Index: 0
+
+Generation 6:
+    Best solution: [ 9.41611964 -0.65225607 -0.02819546  0.93333661 -0.70570084]
+    Fitness value: [0.29208244 0.34750612 1.        ]
+    Index: 0
+
+Generation 7:
+    Best solution: [ 9.41611964 -0.65225607 -0.02819546  0.93333661 -0.70570084]
+    Fitness value: [0.29208244 0.34750612 1.        ]
+    Index: 0
+
+Generation 8:
+    Best solution: [ 9.41611964 -0.16566098  0.44627258  0.93333661 -1.05462876]
+    Fitness value: [0.16889781 0.20135916 1.        ]
+    Index: 3
+
+Generation 9:
+    Best solution: [ 9.41611964 -0.65225607  0.57246554  0.93333661 -0.70570084]
+    Fitness value: [0.29208244 0.34750612 1.        ]
+    Index: 2
+
+Generation 10:
+    Best solution: [ 9.41611964 -0.65225607  0.93095912  0.42819481 -0.70570084]
+    Fitness value: [0.41435193 0.34750612 1.        ]
+    Index: 1
+
+Generation 11:
+    Best solution: [ 9.41611964 -0.65225607 -0.25990887  0.04699062 -0.70570084]
+    Fitness value: [0.6056939  0.34750612 1.        ]
+    Index: 2
+
+Generation 12:
+    Best solution: [ 8.68871737 -0.02932677  0.45597705  0.42819481  0.27836844]
+    Fitness value: [0.09428877 0.13156637 1.        ]
+    Index: 1
+
+Generation 13:
+    Best solution: [ 9.41611964 -0.65225607 -0.25990887  0.06728285 -0.70570084]
+    Fitness value: [0.59116209 0.34750612 1.        ]
+    Index: 1
+
+Generation 14:
+    Best solution: [ 9.00601728 -0.65225607  0.47351697 -1.534194   -0.70570084]
+    Fitness value: [0.25500624 0.44777207 1.        ]
+    Index: 1
+
+Generation 15:
+    Best solution: [ 9.00601728 -0.65225607  0.47351697 -1.16668884 -0.70570084]
+    Fitness value: [0.31382766 0.44777207 1.        ]
+    Index: 3
+
+Generation 16:
+    Best solution: [ 9.46460213 -0.65225607  0.47351697 -0.75788903 -0.70570084]
+    Fitness value: [0.52348407 0.34016763 1.        ]
+    Index: 1
+
+Generation 17:
+    Best solution: [ 8.6199183  -0.65225607 -0.23556044  0.09756213 -0.5633222 ]
+    Fitness value: [0.65554202 0.39141465 1.        ]
+    Index: 1
+
+Generation 18:
+    Best solution: [ 8.81262446 -0.65225607 -0.23556044  0.93333661 -0.31598298]
+    Fitness value: [0.22835913 0.25888171 1.        ]
+    Index: 1
+
+Generation 19:
+    Best solution: [ 9.42716267 -0.65225607  0.47351697  0.62000942 -0.70570084]
+    Fitness value: [0.35611526 0.34578548 1.        ]
+    Index: 2
+
+Generation 20:
+    Best solution: [ 8.68871737 -0.65225607  0.47351697  0.62000942 -0.60025408]
+    Fitness value: [0.40137731 0.41230638 1.        ]
+    Index: 5
+
+Generation 21:
+    Best solution: [ 8.68871737 -0.48193818  0.76537275  0.62000942 -0.70570084]
+    Fitness value: [0.29136023 0.27972782 1.        ]
+    Index: 3
+
+Generation 22:
+    Best solution: [ 8.60208731 -0.65225607 -0.10981446  0.12941967 -0.66660453]
+    Fitness value: [0.8634013  0.64199113 1.        ]
+    Index: 1
+
+Generation 23:
+    Best solution: [ 8.93484024  0.29114679  0.47351697  0.12941967 -0.70570084]
+    Fitness value: [0.11258978 0.13947788 1.        ]
+    Index: 2
+
+Generation 24:
+    Best solution: [ 9.38528731 -0.65225607 -0.36686517  0.47025456 -0.70570084]
+    Fitness value: [0.40540082 0.35247551 1.        ]
+    Index: 6
+
+Generation 25:
+    Best solution: [ 9.91361417 -0.65225607 -0.36686517  0.47025456 -0.70570084]
+    Fitness value: [0.33388743 0.29063339 1.        ]
+    Index: 2
+
+Generation 26:
+    Best solution: [ 9.21161944 -0.65225607 -0.23556044  0.47025456  0.22860247]
+    Fitness value: [0.16583088 0.17985658 1.        ]
+    Index: 1
+
+Generation 27:
+    Best solution: [ 8.39305991 -0.41821223 -0.36686517  0.03367555 -0.70570084]
+    Fitness value: [0.4042593  0.26520126 1.        ]
+    Index: 2
+
+Generation 28:
+    Best solution: [ 7.97301916 -0.41821223 -0.36686517  0.47025456 -0.70570084]
+    Fitness value: [0.34167275 0.29660902 1.        ]
+    Index: 1
+
+Generation 29:
+    Best solution: [ 8.48743359 -0.41821223 -0.23556044  0.67881422 -0.70570084]
+    Fitness value: [0.25918078 0.25955472 1.        ]
+    Index: 2
+
+Generation 30:
+    Best solution: [ 8.68871737 -0.04830795 -0.23556044  0.67881422 -0.70570084]
+    Fitness value: [0.14247391 0.17074678 1.        ]
+    Index: 2
+
+Generation 31:
+    Best solution: [ 8.68871737 -0.59021081  0.47351697 -0.25135512 -0.70570084]
+    Fitness value: [0.84981067 0.39246818 1.        ]
+    Index: 0
+
+Generation 32:
+    Best solution: [ 8.68871737 -0.59021081  0.47351697 -0.25135512 -0.70570084]
+    Fitness value: [0.84981067 0.39246818 1.        ]
+    Index: 0
+
+Generation 33:
+    Best solution: [ 8.68871737 -0.59021081  0.47351697 -0.25135512 -0.70570084]
+    Fitness value: [0.84981067 0.39246818 1.        ]
+    Index: 0
+
+Generation 34:
+    Best solution: [ 8.68871737 -0.59021081  0.47351697 -0.25135512 -0.70570084]
+    Fitness value: [0.84981067 0.39246818 1.        ]
+    Index: 0
+
+Generation 35:
+    Best solution: [ 8.68871737 -0.59021081  0.47351697 -0.25135512 -0.70570084]
+    Fitness value: [0.84981067 0.39246818 1.        ]
+    Index: 0
+
+Generation 36:
+    Best solution: [ 8.68871737 -0.59021081  0.47351697 -0.25135512 -0.70570084]
+    Fitness value: [0.84981067 0.39246818 1.        ]
+    Index: 0
+
+Generation 37:
+    Best solution: [ 8.68871737e+00 -5.90210808e-01  4.73516970e-01  2.13551987e-03
+ -7.05700839e-01]
+    Fitness value: [0.75173919 0.39246818 1.        ]
+    Index: 3
+
+Generation 38:
+    Best solution: [ 8.68871737 -0.78178166  0.55829642 -0.95617133 -0.03132303]
+    Fitness value: [0.70352149 0.38943649 1.        ]
+    Index: 1
+
+Generation 39:
+    Best solution: [ 8.23024067 -0.59021081  0.55829642 -0.95617133 -0.03132303]
+    Fitness value: [0.60508168 0.26480504 1.        ]
+    Index: 1
+
+Generation 40:
+    Best solution: [ 7.44645029 -0.59021081  0.55829642  0.67881422 -0.03132303]
+    Fitness value: [0.241613   0.24487339 1.        ]
+    Index: 1
+
+Generation 41:
+    Best solution: [ 9.91185576 -0.59021081  0.47351697 -0.95617133 -1.01194949]
+    Fitness value: [0.38636572 0.39292054 1.        ]
+    Index: 3
+
+Generation 42:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879 -0.95617133 -1.01194949]
+    Fitness value: [0.32613201 0.81637993 1.        ]
+    Index: 1
+
+Generation 43:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879 -0.95617133 -1.01194949]
+    Fitness value: [0.32613201 0.81637993 1.        ]
+    Index: 0
+
+Generation 44:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879 -0.95617133 -1.01194949]
+    Fitness value: [0.32613201 0.81637993 1.        ]
+    Index: 0
+
+Generation 45:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879 -0.95617133 -1.01194949]
+    Fitness value: [0.32613201 0.81637993 1.        ]
+    Index: 0
+
+Generation 46:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879 -0.14581288 -1.01194949]
+    Fitness value: [0.69178963 0.81637993 1.        ]
+    Index: 0
+
+Generation 47:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879 -0.14581288 -1.01194949]
+    Fitness value: [0.69178963 0.81637993 1.        ]
+    Index: 0
+
+Generation 48:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879 -0.14581288 -1.01194949]
+    Fitness value: [0.69178963 0.81637993 1.        ]
+    Index: 0
+
+Generation 49:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879 -0.14581288 -1.01194949]
+    Fitness value: [0.69178963 0.81637993 1.        ]
+    Index: 0
+
+Generation 50:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879 -0.14581288 -1.01194949]
+    Fitness value: [0.69178963 0.81637993 1.        ]
+    Index: 0
+
+Generation 51:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 52:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 53:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 54:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 55:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 56:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 57:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 58:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 59:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 60:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 61:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 62:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 63:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 64:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 65:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 66:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 67:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 68:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 69:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 70:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 71:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 72:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 73:
+    Best solution: [ 9.43383403 -0.59021081  0.88838879  0.06556765 -1.01194949]
+    Fitness value: [0.97774163 0.81637993 1.        ]
+    Index: 0
+
+Generation 74:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.14944639 -1.01194949]
+    Fitness value: [0.87986924 0.91231756 1.        ]
+    Index: 0
+
+Generation 75:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.14944639 -1.01194949]
+    Fitness value: [0.87986924 0.91231756 1.        ]
+    Index: 0
+
+Generation 76:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.14944639 -1.01194949]
+    Fitness value: [0.87986924 0.91231756 1.        ]
+    Index: 0
+
+Generation 77:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.14944639 -1.01194949]
+    Fitness value: [0.87986924 0.91231756 1.        ]
+    Index: 0
+
+Generation 78:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.14944639 -1.01194949]
+    Fitness value: [0.87986924 0.91231756 1.        ]
+    Index: 0
+
+Generation 79:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.14944639 -1.01194949]
+    Fitness value: [0.87986924 0.91231756 1.        ]
+    Index: 0
+
+Generation 80:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.14944639 -1.01194949]
+    Fitness value: [0.87986924 0.91231756 1.        ]
+    Index: 0
+
+Generation 81:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.14944639 -1.01194949]
+    Fitness value: [0.87986924 0.91231756 1.        ]
+    Index: 0
+
+Generation 82:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.14944639 -1.01194949]
+    Fitness value: [0.87986924 0.91231756 1.        ]
+    Index: 0
+
+Generation 83:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.14944639 -1.01194949]
+    Fitness value: [0.87986924 0.91231756 1.        ]
+    Index: 0
+
+Generation 84:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.14944639 -1.01194949]
+    Fitness value: [0.87986924 0.91231756 1.        ]
+    Index: 0
+
+Generation 85:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.14944639 -1.01194949]
+    Fitness value: [0.87986924 0.91231756 1.        ]
+    Index: 0
+
+Generation 86:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.14944639 -1.01194949]
+    Fitness value: [0.87986924 0.91231756 1.        ]
+    Index: 0
+
+Generation 87:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.14944639 -1.01194949]
+    Fitness value: [0.87986924 0.91231756 1.        ]
+    Index: 0
+
+Generation 88:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 89:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 90:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 91:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 92:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 93:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 94:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 95:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 96:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 97:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 98:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 99:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 100:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 101:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 102:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 103:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 104:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 105:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 106:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 107:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 108:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 109:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 110:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 111:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 112:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 113:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 114:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 115:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 116:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 117:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 118:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 119:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 120:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 121:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 122:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 123:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 124:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 125:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 126:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 127:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 128:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 129:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 130:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 131:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 132:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 133:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 134:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 135:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 136:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 137:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 138:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 139:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 140:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 141:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 142:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 143:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 144:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 145:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 146:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 147:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 148:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 149:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 150:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 151:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 152:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 153:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 154:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 155:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 156:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 157:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 158:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 159:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 160:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 161:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 162:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 163:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 164:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 165:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 166:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 167:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 168:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 169:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 170:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 171:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 172:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 173:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 174:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 175:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 176:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 177:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 178:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 179:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 180:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 181:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 182:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 183:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 184:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 185:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 186:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 187:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 188:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 189:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 190:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 191:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 192:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 193:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 194:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 195:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 196:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 197:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 198:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 199:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 200:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 201:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 202:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 203:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 204:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 205:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 206:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 207:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 208:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 209:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.06644178 -1.01194949]
+    Fitness value: [0.9713673  0.91231756 1.        ]
+    Index: 0
+
+Generation 210:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 211:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 212:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 213:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 214:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 215:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 216:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 217:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 218:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 219:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 220:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 221:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 222:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 223:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 224:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 225:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 226:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 227:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 228:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 229:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 230:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 231:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 232:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 233:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 234:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 235:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 236:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 237:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 238:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 239:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 240:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 241:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 242:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 243:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 244:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 245:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 246:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 247:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 248:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 249:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+
+Generation 250:
+    Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+    Fitness value: [0.97137312 0.91231756 1.        ]
+    Index: 0
+Final:
+Best solution: [ 9.42537415 -0.59021081  0.36590973  0.0959154  -1.01194949]
+Fitness of the best solution: [0.97137312 0.91231756 1.        ]
+Time is 15220.694266080856
+
