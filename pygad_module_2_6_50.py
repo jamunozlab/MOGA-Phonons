@@ -157,7 +157,8 @@ def fitness_func(ga_instance, solution, solution_idx):
     np.around(fc_mat, decimals=5)
     
     
-    out_path = '/Users/amirhusen/Desktop/Amir/Research/phonopy/'+root+'/'
+    out_path = '/Users/jamunoz/Documents/GitHub/MOGA-Phonons/'+root+'/'
+    #out_path = '/Users/amirhusen/Desktop/Amir/Research/phonopy/'+root+'/'
     out_filename = 'FORCE_CONSTANTS'
     with open(out_path+out_filename, 'w') as file:
         print(str(n) + ' ' + str(n), file=file)
@@ -206,8 +207,9 @@ def fitness_func(ga_instance, solution, solution_idx):
     command = 'rm phonopy.yaml'
     os.system(command)
     
-                        
-    in_path_y = '/Users/amirhusen/Desktop/Amir/Research/Phonopy/'+root+'/'
+    
+    in_path_y = out_path                    
+    #in_path_y = '/Users/amirhusen/Desktop/Amir/Research/Phonopy/'+root+'/'
     in_filename = 'band_' + 'ga' + '.yaml'
     #print(in_filename)
     with open(in_path_y+in_filename) as file:
