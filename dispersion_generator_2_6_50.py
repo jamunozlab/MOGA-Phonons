@@ -122,7 +122,9 @@ fc_arr = np.array([[0, 0, 14, 14],
 #fc_in_path = '/Users/jamunoz/OneDrive - University of Texas at El Paso/FeV_lammps/force_constants/'+root+'_7x7x7/'
 
 
-[α0, α1, β1, α2, β2] = [ 9.50512721, -0.86342522, -0.24267484,  0.02242717, -0.64877193]
+[α0, α1, β1, α2, β2] = [ 7.99751658e+00, -4.39172161e-01 , 9.86059293e-01 , 2.02414201e-03, -1.12105143e+00]
+
+#[α0, α1, β1, α2, β2] = [ 9.50512721, -0.86342522, -0.24267484,  0.02242717, -0.64877193]
 α3 = 0#0.0535625 
 β3 = 0#-0.0975
 γ3 = 0#-0.06625
@@ -162,7 +164,8 @@ np.around(fc_mat, decimals=5)
 #print(fc_mat[0:2,0:2])
 #sys.exit()
 
-out_path = '/Users/amirhusen/Desktop/Amir/Research/Phonopy/'+root+'/'
+out_path = '/Users/jamunoz/Documents/GitHub/MOGA-Phonons/'+root+'/'
+#out_path = '/Users/amirhusen/Desktop/Amir/Research/Phonopy/'+root+'/'
 out_filename = 'FORCE_CONSTANTS'
 with open(out_path+out_filename, 'w') as file:
     print(str(n) + ' ' + str(n), file=file)
@@ -183,8 +186,9 @@ command = 'rm phonopy.yaml'
 os.system(command)
 
 distances = []
-                
-in_path_y = '/Users/amirhusen/Desktop/Amir/Research/Phonopy/'+root+'/'
+
+in_path_y = out_path                
+#in_path_y = '/Users/amirhusen/Desktop/Amir/Research/Phonopy/'+root+'/'
 in_filename = 'band_' + 'ga' + '.yaml'
 #print(in_filename)
 with open(in_path_y+in_filename) as file:

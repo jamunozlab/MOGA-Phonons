@@ -7,11 +7,11 @@ Created on Mon Oct  2 22:30:42 2023
 
 import numpy as np
 from math import sqrt, isclose
+import os
 import phonopy
 from phonopy.phonon.band_structure import get_band_qpoints_and_path_connections
 import pygad
 import time
-import multiprocessing as mp
 
 t1 = time.time()
 
@@ -19,10 +19,10 @@ t1 = time.time()
 # Parameter setting
 # ============================================================================
 root = '2_6_50'
-n = 250
+n = 250  # Number of atoms
 a_val = 2.20
 system_size = 5
-alat = a_val * system_size
+alat = a_val * system_size  # size of the box
 
 out_path = '/Users/jamunoz/Documents/GitHub/MOGA-Phonons/' + root + '/'
 
@@ -64,6 +64,7 @@ for i in range(n):
         if i != j:
             ideal_distances[i, :, j] = ide_lat[j, :] - ide_lat[i, :]
 
+            # Apply MIC
             for d in range(3):
                 if ideal_distances[i, d, j] > (alat / 2):
                     ideal_distances[i, d, j] -= alat
@@ -110,7 +111,7 @@ nn_matrix = .5 * a_val * np.array([
 ])
 
 fc_arr = np.array([
-    [0, 0, 14, 14],
+    [0, 0, 14, 14],  # alfa, beta, gama, delta
     [1, 1, 2, 2],
     [3, 4, 14, 14],
     [5, 6, 14, 7],
@@ -119,7 +120,7 @@ fc_arr = np.array([
 ])
 
 # ============================================================================
-# Band path
+# Phonopy setup ONCE
 # ============================================================================
 path = [[[0.0, 0.0, 0.0],
          [-0.5, 0.5, 0.5],
@@ -132,107 +133,15 @@ qpoints, connections = get_band_qpoints_and_path_connections(path, npoints=201)
 
 atomic_masses = [80.0]
 
-# ============================================================================
-# Precompute action blocks
-# ============================================================================
-def determine_swap_r(prox, dist_vec):
-    if prox not in (2, 3, 4):
-        return None
-
-    target = nn_matrix[prox, 0]
-    for r in (1, 2):
-        if isclose(abs(dist_vec[r]), target, rel_tol=.001):
-            return r
-    return None
-
-
-action_blocks = {}
-
-for i in range(n):
-    for prox in range(6):
-        for j in neighbors[i][prox]:
-            dist_vec = ideal_distances[i, :, j]
-            swap_r = determine_swap_r(prox, dist_vec)
-            signs = tuple(-1 if dist_vec[r] < 0 else 1 for r in range(3))
-            key = (prox, swap_r, signs)
-
-            if key not in action_blocks:
-                action_blocks[key] = []
-
-            action_blocks[key].append(i * n + j)
-
-for key in action_blocks:
-    action_blocks[key] = np.asarray(action_blocks[key], dtype=np.int32)
-
-sign_outer = {}
-for sx in (-1, 1):
-    for sy in (-1, 1):
-        for sz in (-1, 1):
-            s = np.array([sx, sy, sz], dtype=float)
-            sign_outer[(sx, sy, sz)] = np.outer(s, s)
-
-# ============================================================================
-# Per-process caches
-# ============================================================================
-_PHONONS = None
-_FC_BUFFER = None
-_FC_BUFFER_FLAT = None
-_BASE_MAT_BUFFER = None
-
-def get_worker_state():
-    """
-    Create and cache one Phonopy object and reusable NumPy buffers per process.
-    """
-    global _PHONONS, _FC_BUFFER, _FC_BUFFER_FLAT, _BASE_MAT_BUFFER
-
-    if _PHONONS is None:
-        ph = phonopy.load(
-            supercell_matrix=[5, 5, 5],
-            primitive_matrix='auto',
-            unitcell_filename=out_path + "POSCAR"
-        )
-
-        if hasattr(ph, "set_masses"):
-            ph.set_masses(atomic_masses)
-        else:
-            ph.primitive.masses = atomic_masses
-
-        _PHONONS = ph
-
-    if _FC_BUFFER is None:
-        _FC_BUFFER = np.zeros((n, n, 3, 3), dtype=float)
-        _FC_BUFFER_FLAT = _FC_BUFFER.reshape(n * n, 3, 3)
-
-    if _BASE_MAT_BUFFER is None:
-        _BASE_MAT_BUFFER = np.zeros((6, 3, 3), dtype=float)
-
-    return _PHONONS, _FC_BUFFER, _FC_BUFFER_FLAT, _BASE_MAT_BUFFER
-
-# ============================================================================
-# Matrix transform helper
-# ============================================================================
-def transform_base_matrix(mat, swap_r, signs):
-    m = mat.copy()
-
-    if swap_r is not None:
-        m[[swap_r, 0], :] = m[[0, swap_r], :]
-        m[:, [swap_r, 0]] = m[:, [0, swap_r]]
-        m[:, [swap_r, 0]] = 0
-
-    m *= sign_outer[signs]
-    return m
-
-# ============================================================================
-# Frequency helper
-# ============================================================================
-def extract_first_branch_frequencies(res):
-    """
-    Convert phonopy band_structure_dict()['frequencies'] into one flat NumPy
-    array containing only the first branch at every q-point.
-    """
-    # res is typically a list of arrays, one per path segment, shape ~ (nq, nbands)
-    parts = [segment[:, 0] for segment in res]
-    return np.concatenate(parts)
+phonons = phonopy.load(
+    supercell_matrix=[5, 5, 5],
+    primitive_matrix='auto',
+    unitcell_filename=out_path + "POSCAR"
+)
+if hasattr(phonons, "set_masses"):
+    phonons.set_masses(atomic_masses)
+else:
+    phonons.primitive.masses = atomic_masses
 
 # ============================================================================
 # Fitness function
@@ -240,65 +149,65 @@ def extract_first_branch_frequencies(res):
 def fitness_func(ga_instance, solution, solution_idx):
     α0, α1, β1, α2, β2 = solution
 
-    α3 = 0.0
-    β3 = 0.0
-    γ3 = 0.0
-    α4 = 0.0
-    β4 = 0.0
-    γ4 = 0.0
-    δ4 = 0.0
-    α5 = 0.0
-    β5 = 0.0
+    α3 = 0
+    β3 = 0
+    γ3 = 0
+    α4 = 0
+    β4 = 0
+    γ4 = 0
+    δ4 = 0
+    α5 = 0
+    β5 = 0
 
     fc = [α0, α1, β1, α2, β2, α3, β3, γ3, α4, β4, γ4, δ4, α5, β5, 0.0]
 
-    phonons, fc_mat, fc_mat_flat, base_mat = get_worker_state()
+    # Local arrays: important so old fitness calls do not contaminate new ones
+    fc_mat = np.zeros((n, n, 3, 3))
+    base_mat = np.zeros((6, 3, 3))
 
-    # Reuse buffers
-    fc_mat.fill(0.0)
-    base_mat.fill(0.0)
-
-    # Fill the 6 shell matrices without allocating new 3x3 arrays
+    # Build base matrices
     for prox in range(6):
-        a00 = fc[fc_arr[prox, 0]]
-        a11 = fc[fc_arr[prox, 1]]
-        a02 = fc[fc_arr[prox, 2]]
-        a12 = fc[fc_arr[prox, 3]]
+        base_mat[prox, :, :] = np.array([
+            [fc[fc_arr[prox, 0]], fc[fc_arr[prox, 2]], fc[fc_arr[prox, 2]]],
+            [fc[fc_arr[prox, 2]], fc[fc_arr[prox, 1]], fc[fc_arr[prox, 3]]],
+            [fc[fc_arr[prox, 2]], fc[fc_arr[prox, 3]], fc[fc_arr[prox, 1]]]
+        ])
 
-        base_mat[prox, 0, 0] = a00
-        base_mat[prox, 0, 1] = a02
-        base_mat[prox, 0, 2] = a02
+    # Fill fc_mat
+    for i in range(n):
+        for prox in range(6):
+            for j in neighbors[i][prox]:
+                fc_mat[i, j, :, :] = base_mat[prox, :, :]
 
-        base_mat[prox, 1, 0] = a02
-        base_mat[prox, 1, 1] = a11
-        base_mat[prox, 1, 2] = a12
+                if prox in [2, 3, 4]:
+                    for r in range(1, 3):
+                        if isclose(abs(ideal_distances[i, r, j]), nn_matrix[prox, 0], rel_tol=.001):
+                            fc_mat[i, j, [r, 0], :] = fc_mat[i, j, [0, r], :]
+                            fc_mat[i, j, :, [r, 0]] = fc_mat[i, j, :, [0, r]]
+                            fc_mat[i, j, :, [r, 0]] = 0
 
-        base_mat[prox, 2, 0] = a02
-        base_mat[prox, 2, 1] = a12
-        base_mat[prox, 2, 2] = a11
+                for r in range(3):
+                    if ideal_distances[i, r, j] < 0:
+                        fc_mat[i, j, r, :] = -fc_mat[i, j, r, :]
+                        fc_mat[i, j, :, r] = -fc_mat[i, j, :, r]
 
-    transformed_cache = {}
+    # Round and assign directly in memory
+    fc_mat = np.round(fc_mat, 5)
 
-    for key, flat_idx in action_blocks.items():
-        prox, swap_r, signs = key
-
-        transformed = transformed_cache.get(key)
-        if transformed is None:
-            transformed = transform_base_matrix(base_mat[prox], swap_r, signs)
-            transformed_cache[key] = transformed
-
-        fc_mat_flat[flat_idx] = transformed
-
-    np.round(fc_mat, 5, out=fc_mat)
-
+    # In-memory Phonopy evaluation
     phonons.force_constants = fc_mat
     phonons.run_band_structure(qpoints, path_connections=connections, labels=labels)
     res = phonons.get_band_structure_dict()['frequencies']
 
-    freqs = extract_first_branch_frequencies(res)
+    freqs = []
+    for i in range(len(res)):
+        for j in range(len(res[i])):
+            freqs.append(res[i][j][0])
 
-    neg_count = np.count_nonzero(freqs < 0.0)
-    fitness1 = 1.0 / (1 + neg_count)
+    # Negative frequencies
+    neg_freqs = [f for f in freqs if f < 0]
+
+    fitness1 = 1.0 / (1 + len(neg_freqs))
 
     total = abs(α0 + 8 * α1 + 2 * α2 + 4 * β2 + 4 * α3 + 8 * β3 + 8 * α4 + 16 * β4 + 8 * α5)
     fitness2 = 1.0 / (1 + total)
@@ -314,12 +223,12 @@ def on_generation(ga_instance):
     best_solution, best_solution_fitness, best_solution_idx = ga_instance.best_solution(
         pop_fitness=ga_instance.last_generation_fitness
     )
-
     with open(out_path + "generation_output_mod.txt", "a") as file:
         file.write(f"Generation {ga_instance.generations_completed}:\n")
         file.write(f"    Best solution: {best_solution}\n")
         file.write(f"    Fitness value: {best_solution_fitness}\n")
-        file.write(f"    Index: {best_solution_idx}\n\n")
+        file.write(f"    Index: {best_solution_idx}\n")
+        file.write("\n")
 
     t2 = time.time()
     print("Time is", t2 - t1, "Best solution fitness is:", np.linalg.norm(best_solution_fitness))
@@ -328,8 +237,6 @@ def on_generation(ga_instance):
 # Main
 # ============================================================================
 if __name__ == '__main__':
-    mp.set_start_method("spawn", force=True)
-
     num_generations = 300
     sol_per_pop = 40
     num_parents_mating = 10
@@ -356,7 +263,6 @@ if __name__ == '__main__':
         crossover_type="uniform",
         mutation_type="random",
         on_generation=on_generation,
-        parallel_processing=["process", 8],
     )
 
     ga_instance.run()
