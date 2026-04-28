@@ -1,0 +1,24 @@
+#!/bin/bash
+#SBATCH --job-name=moga
+#SBATCH --account=jakar_partner_physj
+#SBATCH --qos=jakar_medium_physj
+#SBATCH --partition=medium
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=20
+#SBATCH --time=00:01:00
+#SBATCH --output=%j.log
+
+pwd
+hostname
+date
+ulimit -s unlimited
+
+#Load Modules
+source /opt/intel/oneapi/setvars.sh -ofi_internal=1 --force
+module load purge
+module load gnu12
+module load openmpi4/4.1.5
+module load mkl
+
+#Execute
+mpirun -np $SLURM_NTASKS /work/ahusen/MOGA-Phonons/pygad_module_2_6_50_mod_parallel.py > output.txt 
