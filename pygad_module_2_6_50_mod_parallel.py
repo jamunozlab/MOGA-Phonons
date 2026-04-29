@@ -16,6 +16,9 @@ import multiprocessing as mp
 
 t1 = time.time()
 
+if rank == 0:
+    start_time = time.time()
+
 # ============================================================================
 # Parameter setting
 # ============================================================================
@@ -25,7 +28,7 @@ a_val = 2.20
 system_size = 5
 alat = a_val * system_size
 
-out_path = '/Users/jamunoz/Documents/GitHub/MOGA-Phonons/' + root + '/'
+out_path = '/home/jamunoz/MOGA-Phonons/' + root + '/'
 
 # ============================================================================
 # Define unit cell / supercell positions
@@ -291,3 +294,7 @@ if __name__ == '__main__':
 
     t2 = time.time()
     print("Time is", t2 - t1)
+
+    if rank == 0:
+        end_time = time.time()
+        print(f"TOTAL_RUNTIME {end_time - start_time}")
