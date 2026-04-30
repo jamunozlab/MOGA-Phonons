@@ -7,4 +7,4 @@ simulations_path = '/home/jamunoz/MOGA-Phonons/simulations/'
 executables_path = '/home/jamunoz/MOGA-Phonons/executables/'
 executable = 'pygad_module_2_6_50_mod_parallel.py'
 experiments_path = '/home/jamunoz/MOGA-Phonons/experiments/'
-other_files = ['y_normalizer_time_int1_new_total.pt', 'y_normalizer_time_int1_new_total.pt', 'traced_sample_model_time_int1_new_total.pt']
+other_files = []
