@@ -42,7 +42,7 @@ if __name__ == "__main__":
 #### SCRIPT SHOULD BE BELOW ####      
     
     experiment_description = (
-        "MOGA Jakar sweep\n"
+        "Part 2 of MOGA Jakar sweep\n"
         "atomic_masses: 50–100 step 10\n"
         "a_val: 2.0–3.2 step 0.2\n"
     )

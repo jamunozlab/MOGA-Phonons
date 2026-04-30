@@ -13,6 +13,7 @@ from phonopy.phonon.band_structure import get_band_qpoints_and_path_connections
 import pygad
 import time
 import multiprocessing as mp
+import re
 
 t1 = time.time()
 
