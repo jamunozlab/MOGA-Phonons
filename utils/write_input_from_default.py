@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
 """
-Auxiliary functions to write ferroX input files
+Auxiliary functions to write input files
 """
 
 def generate_input_from_default(default, **kwargs):
-    simulation_parameters_dictionary = default
+    simulation_parameters_dictionary = default.copy()
     for key, value in kwargs.items():
         simulation_parameters_dictionary[key] = value 
         
@@ -20,6 +20,13 @@ def generate_input_lines(param_dict):
             second_part = str(value)
         if isinstance(value, float):
             second_part = "{:.2e}".format(value)
+        if isinstance(value, list):
+            if all(isinstance(x, int) for x in value):
+                second_part = " ".join(str(x) for x in value)
+            elif all(isinstance(x, float) for x in value):
+                second_part = " ".join("{:.2e}".format(x) for x in value)
+            else:
+                second_part = " ".join(str(x) for x in value)
         if isinstance(value, list):
             if isinstance(value[0], int):
                 second_part = "{} {} {}".format(value[0], value[1], value[2])

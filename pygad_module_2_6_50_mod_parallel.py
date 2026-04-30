@@ -55,7 +55,8 @@ def read_crystal_params(filename="inputc"):
     a_val = float(params["a_val"])
 
     atomic_masses = [
-        float(x.strip()) for x in params["atomic_masses"].split(",")
+        float(x) for x in re.split(r"[,\s]+", params["atomic_masses"].strip())
+        if x
     ]
 
     return atomic_masses, a_val
