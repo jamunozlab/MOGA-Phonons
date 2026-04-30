@@ -17,8 +17,8 @@ import re
 
 t1 = time.time()
 
-#if rank == 0:
-#    start_time = time.time()
+if rank == 0:
+    start_time = time.time()
 
 def read_crystal_params(filename="inputc"):
     """
@@ -341,3 +341,4 @@ if __name__ == '__main__':
     if rank == 0:
         end_time = time.time()
         print(f"TOTAL_RUNTIME {end_time - start_time}")
+
