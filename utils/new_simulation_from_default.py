@@ -8,7 +8,7 @@ and input and sbatch parameters to change from a default.
 import os
 from .dir_structure_utils import find_next_available_dir
 from .write_input_from_default import write_input_from_default
-from .write_run_sbatch_from_default import write_run_sbatch_from_default
+from .write_run_sbatch_from_default import write_run_sbatch_from_default_jakar
 
 def new_simulation_from_default(default, simulations_path, executables_path, executable, sim_params_dict, 
                                 sbatch_options_dict, other_files=[], submit_job=True):
@@ -26,7 +26,11 @@ def new_simulation_from_default(default, simulations_path, executables_path, exe
         command = 'ln -s ' + other_path + ' ' + new_other_path
         os.system(command)
     write_input_from_default(default, simulation_path, **sim_params_dict)
-    write_run_sbatch_from_default(simulation_path, executable, **sbatch_options_dict)
+    write_run_sbatch_from_default_jakar(
+        simulation_path=simulation_path,
+        executable=executable,
+        **sbatch_options_dict
+    )
     print('New simulation is in ' + simulation_path)
     
     if submit_job:
