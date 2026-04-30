@@ -27,11 +27,6 @@ def generate_input_lines(param_dict):
                 second_part = " ".join("{:.2e}".format(x) for x in value)
             else:
                 second_part = " ".join(str(x) for x in value)
-        if isinstance(value, list):
-            if isinstance(value[0], int):
-                second_part = "{} {} {}".format(value[0], value[1], value[2])
-            if isinstance(value[0], float):
-                second_part = "{:.2e} {:.2e} {:.2e}".format(value[0], value[1], value[2])
         if isinstance(value, int):
             second_part = str(value)
         lines.append(first_part + second_part + str('\n'))
