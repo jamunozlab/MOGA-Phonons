@@ -16,15 +16,56 @@ import multiprocessing as mp
 
 t1 = time.time()
 
-if rank == 0:
-    start_time = time.time()
+#if rank == 0:
+#    start_time = time.time()
+
+def read_crystal_params(filename="inputc"):
+    """
+    Reads crystal parameters from a simple text file.
+
+    Expected format:
+        atomic_masses = 80.0
+        a_val = 2.20
+
+    atomic_masses may be comma-separated:
+        atomic_masses = 80.0, 80.0
+    """
+
+    params = {}
+
+    with open(filename, "r") as f:
+        for line in f:
+            line = line.strip()
+
+            if not line or line.startswith("#"):
+                continue
+
+            key, value = line.split("=", 1)
+            key = key.strip()
+            value = value.strip()
+
+            params[key] = value
+
+    if "a_val" not in params:
+        raise ValueError("crystal_params.txt must define a_val")
+
+    if "atomic_masses" not in params:
+        raise ValueError("crystal_params.txt must define atomic_masses")
+
+    a_val = float(params["a_val"])
+
+    atomic_masses = [
+        float(x.strip()) for x in params["atomic_masses"].split(",")
+    ]
+
+    return atomic_masses, a_val
 
 # ============================================================================
 # Parameter setting
 # ============================================================================
 root = '2_6_50'
 n = 250
-a_val = 2.20
+atomic_masses, a_val = read_crystal_params("inputc")
 system_size = 5
 alat = a_val * system_size
 
@@ -133,8 +174,6 @@ path = [[[0.0, 0.0, 0.0],
 
 labels = [r"$\Gamma$", "H", "P", r"$\Gamma$", "N"]
 qpoints, connections = get_band_qpoints_and_path_connections(path, npoints=201)
-
-atomic_masses = [80.0]
 
 # ============================================================================
 # Per-process phonopy cache
