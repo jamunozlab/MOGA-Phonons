@@ -48,7 +48,7 @@ def generate_run_sbatch_from_default_jakar(**kwargs):
         "--partition": "medium",
         "--nodes": "1",
         "--ntasks-per-node": "20",
-        "--time": "00:30:00",
+        "--time": "02:00:00",
         "--output": "%j.log",
         "--error": "%j.err",
     }
