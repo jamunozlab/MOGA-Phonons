@@ -294,6 +294,9 @@ def on_generation(ga_instance):
 if __name__ == '__main__':
     mp.set_start_method("spawn", force=True)
 
+    nproc = int(os.environ.get("SLURM_CPUS_PER_TASK", "8"))
+    print(f"Using {nproc} worker processes")
+
     num_generations = 2
     sol_per_pop = 20
     num_parents_mating = 10
@@ -322,7 +325,7 @@ if __name__ == '__main__':
         crossover_type="uniform",
         mutation_type="random",
         on_generation=on_generation,
-        parallel_processing=["process", 2],  # adjust 8 to your machine
+        parallel_processing=["process", nproc],  # adjust 8 to your machine
     )
 
     ga_instance.run()

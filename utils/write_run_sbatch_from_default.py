@@ -47,8 +47,9 @@ def generate_run_sbatch_from_default_jakar(**kwargs):
         "--qos": "jakar_medium_physj",
         "--partition": "medium",
         "--nodes": "1",
-        "--ntasks-per-node": "20",
-        "--time": "02:00:00",
+        "--ntasks-per-node": "1",
+        "--cpus-per-task": "20",
+        "--time": "06:00:00",
         "--output": "%j.log",
         "--error": "%j.err",
     }
@@ -121,7 +122,7 @@ def generate_run_sbatch_lines_jakar(
     lines.append("\n")
 
     lines.append(
-        f"mpirun -np $SLURM_NTASKS python {executable} > output.txt\n"
+        f"python {executable} > output.txt\n"
     )
     lines.append("\n")
 
