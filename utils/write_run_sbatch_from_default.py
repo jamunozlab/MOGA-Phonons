@@ -86,6 +86,12 @@ def generate_run_sbatch_lines_jakar(
             lines.append(f"#SBATCH {key}={value}\n")
 
     lines.append("\n")
+    lines.append("export OMP_NUM_THREADS=1")
+    lines.append("export MKL_NUM_THREADS=1")
+    lines.append("export OPENBLAS_NUM_THREADS=1")
+    lines.append("\n")
+
+    lines.append("\n")
     lines.append('echo "========================================"\n')
     lines.append('echo "Job started on $(hostname)"\n')
     lines.append('echo "Date: $(date)"\n')
