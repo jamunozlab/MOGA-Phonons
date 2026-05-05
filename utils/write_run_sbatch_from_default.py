@@ -48,7 +48,7 @@ def generate_run_sbatch_from_default_jakar(**kwargs):
         "--partition": "medium",
         "--nodes": "1",
         "--ntasks-per-node": "1",
-        "--cpus-per-task": "20",
+        "--cpus-per-task": "4",
         "--time": "06:00:00",
         "--output": "%j.log",
         "--error": "%j.err",
@@ -84,12 +84,6 @@ def generate_run_sbatch_lines_jakar(
             lines.append(f"#SBATCH {key}\n")
         else:
             lines.append(f"#SBATCH {key}={value}\n")
-
-    lines.append("\n")
-    lines.append("export OMP_NUM_THREADS=1")
-    lines.append("export MKL_NUM_THREADS=1")
-    lines.append("export OPENBLAS_NUM_THREADS=1")
-    lines.append("\n")
 
     lines.append("\n")
     lines.append('echo "========================================"\n')

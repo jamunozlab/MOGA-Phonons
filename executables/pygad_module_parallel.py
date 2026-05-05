@@ -297,8 +297,8 @@ if __name__ == '__main__':
     nproc = int(os.environ.get("SLURM_CPUS_PER_TASK", "8"))
     print(f"Using {nproc} worker processes")
 
-    num_generations = 2
-    sol_per_pop = 20
+    num_generations = 20
+    sol_per_pop = 40
     num_parents_mating = 10
     num_genes = 5
 
