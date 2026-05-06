@@ -1,0 +1,7 @@
+Using 20 worker processes
+reached here
+Time is 258.55230021476746 Best solution fitness is: 0.9151034837931762
+Time is 381.66005778312683 Best solution fitness is: 0.9151034837931762
+Best solution: [ 3.47163328  0.49915423 -1.1131505  -0.75940564 -1.52332523]
+Fitness of the best solution: [0.0030303  0.87165335 0.2786138 ]
+Time is 453.9155435562134

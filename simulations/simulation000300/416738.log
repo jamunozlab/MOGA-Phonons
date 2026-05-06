@@ -1,0 +1,14 @@
+========================================
+Job started on cnode001.hpc.local
+Date: Tue May  5 01:52:37 PM MDT 2026
+Working dir: /gpfs/home/jamunoz/MOGA-Phonons/simulations/simulation000300
+SLURM_NTASKS: 1
+========================================
+/scratch/jamunoz/miniconda3/envs/moga/bin/python
+Python 3.10.20
+/scratch/jamunoz/miniconda3/envs/moga/bin/mpirun
+Env OK
+Running MOGA...
+========================================
+Job finished at Tue May  5 04:17:25 PM MDT 2026
+========================================

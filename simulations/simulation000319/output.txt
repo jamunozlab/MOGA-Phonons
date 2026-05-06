@@ -1,0 +1,25 @@
+Using 2 worker processes
+reached here
+Time is 822.9700677394867 Best solution fitness is: 1.0310716632617125
+Time is 1226.72940325737 Best solution fitness is: 1.0310716632617125
+Time is 1630.1673486232758 Best solution fitness is: 1.0310716632617125
+Time is 2034.3877201080322 Best solution fitness is: 1.0310716632617125
+Time is 2439.219675540924 Best solution fitness is: 1.0310716632617125
+Time is 2843.2731466293335 Best solution fitness is: 1.0310716632617125
+Time is 3247.229679584503 Best solution fitness is: 1.0310716632617125
+Time is 3651.6669442653656 Best solution fitness is: 1.3585614099420713
+Time is 4055.3377990722656 Best solution fitness is: 1.3585614099420713
+Time is 4458.798906326294 Best solution fitness is: 1.3585614099420713
+Time is 4862.373565912247 Best solution fitness is: 1.3585614099420713
+Time is 5266.317789077759 Best solution fitness is: 1.3585614099420713
+Time is 5670.135937929153 Best solution fitness is: 1.3585614099420713
+Time is 6074.146896839142 Best solution fitness is: 1.3585614099420713
+Time is 6478.252423524857 Best solution fitness is: 1.3585614099420713
+Time is 6882.164039850235 Best solution fitness is: 1.3585614099420713
+Time is 7223.918206453323 Best solution fitness is: 1.3585614099420713
+Time is 7627.819133281708 Best solution fitness is: 1.3585614099420713
+Time is 8030.720573425293 Best solution fitness is: 1.352574618631402
+Time is 8434.839804649353 Best solution fitness is: 1.352574618631402
+Best solution: [ 7.7424167  -0.08273648 -0.46365979 -0.45885634 -1.49305826]
+Fitness of the best solution: [1.         0.83992737 0.35210809]
+Time is 8756.705971956253

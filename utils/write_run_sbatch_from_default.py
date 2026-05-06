@@ -48,7 +48,7 @@ def generate_run_sbatch_from_default_jakar(**kwargs):
         "--partition": "medium",
         "--nodes": "1",
         "--ntasks-per-node": "1",
-        "--cpus-per-task": "4",
+        "--cpus-per-task": "2",
         "--time": "06:00:00",
         "--output": "%j.log",
         "--error": "%j.err",
