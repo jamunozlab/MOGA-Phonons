@@ -34,7 +34,7 @@ which mpirun
 python -c "import numpy, mpi4py; print(\"Env OK\")"
 
 # Go to your code
-cd /home/jamunoz/MOGA-Phonons/simulations/simulation000306/
+cd /Users/jamunoz/Documents/GitHub/MOGA-Phonons/simulations/simulation000306/
 
 echo "Running MOGA..."
 

@@ -4,6 +4,7 @@ import os
 import re
 import argparse
 import numpy as np
+from pathlib import Path
 
 
 def read_inputc(input_path):
@@ -119,36 +120,41 @@ def etl_experiment(
     output_filename="moga_summary.npz",
     verbose=False,
 ):
-    user = os.environ["USER"]
 
+    # Automatically detect repo root from this file location
     if repo_root is None:
-        repo_root = f"/home/{user}/MOGA-Phonons"
+        repo_root = Path(__file__).resolve().parent
+    else:
+        repo_root = Path(repo_root)
 
-    experiment_path = os.path.join(repo_root, "experiments", experiment_name)
-    simulations_root = os.path.join(repo_root, "simulations")
+    experiment_path = repo_root / "experiments" / experiment_name
+    simulations_root = repo_root / "simulations"
 
-    if not os.path.isfile(experiment_path):
+    if not experiment_path.is_file():
         raise FileNotFoundError(f"Experiment file not found: {experiment_path}")
 
     simulation_names = read_experiment_file(experiment_path)
 
     if verbose:
         print(f"Experiment: {experiment_name}")
+        print(f"Repo root: {repo_root}")
         print(f"Found {len(simulation_names)} simulations.")
 
     output_paths = []
 
     for sim_name in simulation_names:
-        simulation_path = os.path.join(simulations_root, sim_name)
+
+        simulation_path = simulations_root / sim_name
 
         try:
             output_path = etl_simulation(
-                simulation_path=simulation_path,
+                simulation_path=str(simulation_path),
                 input_filename=input_filename,
                 generation_output_filename=generation_output_filename,
                 output_filename=output_filename,
                 verbose=verbose,
             )
+
             output_paths.append(output_path)
 
         except FileNotFoundError as err:
