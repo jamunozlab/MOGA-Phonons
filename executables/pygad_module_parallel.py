@@ -10,10 +10,15 @@ from math import sqrt, isclose
 import os
 import phonopy
 from phonopy.phonon.band_structure import get_band_qpoints_and_path_connections
+from phonopy.structure.atoms import PhonopyAtoms
 import pygad
 import time
 import multiprocessing as mp
 import re
+import json
+import socket
+import platform
+from datetime import datetime
 
 t1 = time.time()
 
@@ -69,7 +74,7 @@ atomic_masses, a_val = read_crystal_params("inputc")
 system_size = 5
 alat = a_val * system_size
 
-out_path = '/home/jamunoz/MOGA-Phonons/' + root + '/'
+out_path = '/Users/jamunoz/Documents/GitHub/MOGA-Phonons/' + root + '/'
 
 # ============================================================================
 # Define unit cell / supercell positions
@@ -180,6 +185,46 @@ qpoints, connections = get_band_qpoints_and_path_connections(path, npoints=201)
 # ============================================================================
 _PHONONS = None
 
+def make_bcc_unitcell(a_val, atomic_masses, symbol="Fe"):
+    """
+    Build the two-atom conventional BCC unit cell directly in memory.
+
+    This replaces the need for a POSCAR file. The generated cell is equivalent to:
+
+        scale = a_val
+        lattice = identity matrix
+        scaled positions = (0, 0, 0) and (1/2, 1/2, 1/2)
+
+    Parameters
+    ----------
+    a_val : float
+        Cubic lattice parameter in Angstrom.
+    atomic_masses : list[float]
+        Atomic masses in amu. If one mass is provided, it is used for both BCC atoms.
+        If two masses are provided, they are assigned to the two basis atoms.
+    symbol : str
+        Chemical symbol used by Phonopy. The mass is overwritten by atomic_masses.
+    """
+    masses = list(atomic_masses)
+    if len(masses) == 1:
+        masses = [masses[0], masses[0]]
+    elif len(masses) != 2:
+        raise ValueError(
+            "For the two-atom BCC unit cell, atomic_masses must contain either "
+            "one value or two values."
+        )
+
+    return PhonopyAtoms(
+        symbols=[symbol, symbol],
+        cell=np.eye(3) * a_val,
+        scaled_positions=[
+            [0.0, 0.0, 0.0],
+            [0.5, 0.5, 0.5],
+        ],
+        masses=masses,
+    )
+
+
 def get_phonons():
     """
     Create one Phonopy object per worker process and reuse it.
@@ -187,16 +232,12 @@ def get_phonons():
     """
     global _PHONONS
     if _PHONONS is None:
-        ph = phonopy.load(
-            supercell_matrix=[5, 5, 5],
-            primitive_matrix='auto',
-            unitcell_filename= "POSCAR"
+        unitcell = make_bcc_unitcell(a_val, atomic_masses)
+        ph = phonopy.Phonopy(
+            unitcell,
+            supercell_matrix=[system_size, system_size, system_size],
+            primitive_matrix="auto",
         )
-
-        if hasattr(ph, "set_masses"):
-            ph.set_masses(atomic_masses)
-        else:
-            ph.primitive.masses = atomic_masses
 
         _PHONONS = ph
 
@@ -274,19 +315,48 @@ def fitness_func(ga_instance, solution, solution_idx):
 # Generation callback
 # ============================================================================
 def on_generation(ga_instance):
+
+    generation = ga_instance.generations_completed
+
+    population = ga_instance.population
+    fitnesses = ga_instance.last_generation_fitness
+
     best_solution, best_solution_fitness, best_solution_idx = ga_instance.best_solution(
-        pop_fitness=ga_instance.last_generation_fitness
+        pop_fitness=fitnesses
     )
 
-    with open("generation_output_mod.txt", "a") as file:
-        file.write(f"Generation {ga_instance.generations_completed}:\n")
-        file.write(f"    Best solution: {best_solution}\n")
-        file.write(f"    Fitness value: {best_solution_fitness}\n")
-        file.write(f"    Index: {best_solution_idx}\n")
-        file.write("\n")
+    generation_data = {
+
+        "generation": generation,
+
+        "timestamp": datetime.now().isoformat(),
+
+        "population": np.array(population).tolist(),
+
+        "fitnesses": np.array(fitnesses).tolist(),
+
+        "best_solution_index": int(best_solution_idx),
+
+        "best_solution": np.array(best_solution).tolist(),
+
+        "best_fitness": np.array(best_solution_fitness).tolist(),
+
+        "best_fitness_norm": float(
+            np.linalg.norm(best_solution_fitness)
+        ),
+    }
+
+    with open("generation_history.jsonl", "a") as file:
+        file.write(json.dumps(generation_data) + "\n")
 
     t2 = time.time()
-    print("Time is", t2 - t1, "Best solution fitness is:", np.linalg.norm(best_solution_fitness))
+
+    print(
+        f"Generation {generation} | "
+        f"Best fitness norm = "
+        f"{np.linalg.norm(best_solution_fitness):.6f} | "
+        f"Elapsed = {t2 - t1:.2f} s"
+    )
 
 # ============================================================================
 # Main
@@ -297,9 +367,9 @@ if __name__ == '__main__':
     nproc = int(os.environ.get("SLURM_CPUS_PER_TASK", "8"))
     print(f"Using {nproc} worker processes")
 
-    num_generations = 20
-    sol_per_pop = 40
-    num_parents_mating = 10
+    num_generations = 200
+    sol_per_pop = 100
+    num_parents_mating = 60
     num_genes = 5
 
     gene_space = [
@@ -321,7 +391,7 @@ if __name__ == '__main__':
         gene_space=gene_space,
         mutation_percent_genes=20,
         parent_selection_type="nsga2",
-        keep_elitism=2,
+        keep_elitism=5,
         crossover_type="uniform",
         mutation_type="random",
         on_generation=on_generation,
@@ -338,5 +408,3 @@ if __name__ == '__main__':
 
     t2 = time.time()
     print("Time is", t2 - t1)
-
-
