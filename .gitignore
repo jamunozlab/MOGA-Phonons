@@ -1,4 +1,30 @@
-.DS_Store
+# Generated experiments
+experiments/
+simulations/
+dataframes/
+
+# Phonon outputs
+phonon_generations/
+FORCE_CONSTANTS
+band_ga.yaml
+
+# Logs
 *.log
 *.err
-__pycache__/
+*.out
+
+# Generated data
+*.npz
+*.npy
+*.jsonl
+
+# Figures
+*.png
+*.pdf
+*.svg
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
