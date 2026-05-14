@@ -1,1 +1,0 @@
-/home/jamunoz/MOGA-Phonons/executables/pygad_module_parallel.py
