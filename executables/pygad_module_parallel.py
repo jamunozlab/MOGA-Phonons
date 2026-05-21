@@ -367,9 +367,9 @@ if __name__ == '__main__':
     nproc = int(os.environ.get("SLURM_CPUS_PER_TASK", "8"))
     print(f"Using {nproc} worker processes")
 
-    num_generations = 200
+    num_generations = 300
     sol_per_pop = 100
-    num_parents_mating = 60
+    num_parents_mating = 40
     num_genes = 5
 
     gene_space = [
@@ -391,7 +391,7 @@ if __name__ == '__main__':
         gene_space=gene_space,
         mutation_percent_genes=20,
         parent_selection_type="nsga2",
-        keep_elitism=5,
+        keep_elitism=4,
         crossover_type="uniform",
         mutation_type="random",
         on_generation=on_generation,
@@ -404,7 +404,7 @@ if __name__ == '__main__':
     print(f"Best solution: {solution}")
     print(f"Fitness of the best solution: {solution_fitness}")
 
-    ga_instance.plot_fitness(label=['Fitness1', 'Fitness2', 'Fitness3'])
+    #ga_instance.plot_fitness(label=['Fitness1', 'Fitness2', 'Fitness3'])
 
     t2 = time.time()
     print("Time is", t2 - t1)

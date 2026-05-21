@@ -61,7 +61,7 @@ def generate_run_sbatch_from_default_jakar(**kwargs):
 
 
 def generate_run_sbatch_lines_jakar(
-    simulation_path="/home/jamunoz/MOGA-Phonons",
+    simulation_path="/Users/jamunoz/Documents/GitHub/MOGA-Phonons",
     executable="pygad_module_2_6_50_mod_parallel.py",
     conda_path="/scratch/$USER/miniconda3/etc/profile.d/conda.sh",
     conda_env="moga",
@@ -134,7 +134,7 @@ def generate_run_sbatch_lines_jakar(
 
 
 def write_run_sbatch_from_default_jakar(
-    simulation_path="/home/jamunoz/MOGA-Phonons",
+    simulation_path="/Users/jamunoz/Documents/GitHub/MOGA-Phonons",
     executable="pygad_module_2_6_50_mod_parallel.py",
     output_filename="runc.sbatch",
     **kwargs,

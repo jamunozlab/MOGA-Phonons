@@ -33,7 +33,7 @@ which mpirun
 python -c "import numpy, mpi4py; print('Env OK')"
 
 # Go to your code
-cd /home/jamunoz/MOGA-Phonons
+cd /Users/jamunoz/Documents/GitHub/MOGA-Phonons
 
 echo "Running MOGA..."
 

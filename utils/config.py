@@ -2,9 +2,9 @@
 global paths to required directories and executable file name
 """
 
-home_path = '/home/jamunoz/MOGA-Phonons'
-simulations_path = '/home/jamunoz/MOGA-Phonons/simulations/'
-executables_path = '/home/jamunoz/MOGA-Phonons/executables/'
+home_path = '/Users/jamunoz/Documents/GitHub/MOGA-Phonons'
+simulations_path = '/Users/jamunoz/Documents/GitHub/MOGA-Phonons/simulations/'
+executables_path = '/Users/jamunoz/Documents/GitHub/MOGA-Phonons/executables/'
 executable = 'pygad_module_parallel.py'
-experiments_path = '/home/jamunoz/MOGA-Phonons/experiments/'
+experiments_path = '/Users/jamunoz/Documents/GitHub/MOGA-Phonons/experiments/'
 other_files = []

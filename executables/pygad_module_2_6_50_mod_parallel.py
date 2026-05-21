@@ -71,7 +71,7 @@ atomic_masses, a_val = read_crystal_params("inputc")
 system_size = 5
 alat = a_val * system_size
 
-out_path = '/home/jamunoz/MOGA-Phonons/' + root + '/'
+out_path = '/Users/jamunoz/Documents/GitHub/MOGA-Phonons/' + root + '/'
 
 # ============================================================================
 # Define unit cell / supercell positions
