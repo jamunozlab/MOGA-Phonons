@@ -367,18 +367,18 @@ if __name__ == '__main__':
     nproc = int(os.environ.get("SLURM_CPUS_PER_TASK", "8"))
     print(f"Using {nproc} worker processes")
 
-    num_generations = 300
-    sol_per_pop = 100
-    num_parents_mating = 40
+    num_generations = 500
+    sol_per_pop = 200
+    num_parents_mating = 80
     num_genes = 5
 
     gene_space = [
-        {'low': 1, 'high': 10},
-        {'low': -2.00, 'high': 2.00},
-        {'low': -2.00, 'high': 2.00},
-        {'low': -2.00, 'high': 2.00},
-        {'low': -2.00, 'high': 2.00}
-    ]
+    {"low": 3.0,  "high": 10.0},   # alpha0
+    {"low": -1.5, "high": 0.4},    # alpha1
+    {"low": -1.6, "high": 1.6},    # beta1
+    {"low": -2.0, "high": 1.2},    # alpha2
+    {"low": -2.0, "high": 0.4},    # beta2
+]
 
     print('reached here')
 
@@ -389,9 +389,11 @@ if __name__ == '__main__':
         sol_per_pop=sol_per_pop,
         num_genes=num_genes,
         gene_space=gene_space,
-        mutation_percent_genes=20,
+        #mutation_percent_genes=20,
+        mutation_probability=0.10,
+        mutation_num_genes=1,
         parent_selection_type="nsga2",
-        keep_elitism=4,
+        keep_elitism=20,
         crossover_type="uniform",
         mutation_type="random",
         on_generation=on_generation,

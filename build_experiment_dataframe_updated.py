@@ -140,8 +140,19 @@ def load_band_yaml(yaml_path):
     solution_index = data.get("solution_index", solution_index_from_path)
     rank = data.get("rank", rank_from_path)
 
+    selection_metadata = data.get("selection_metadata", {})
+
     fitness = data.get("fitness", None)
+    if fitness is None:
+        fitness = selection_metadata.get("fitness", None)
+
     fitness_norm = data.get("fitness_norm", None)
+    if fitness_norm is None:
+        fitness_norm = selection_metadata.get("fitness_norm", None)
+
+    sort_by = selection_metadata.get("sort_by", None)
+    sort_score = selection_metadata.get("sort_score", None)
+    source = data.get("source", None)
 
     if fitness is not None:
         fitness = [float(x) for x in fitness]
@@ -166,9 +177,9 @@ def load_band_yaml(yaml_path):
         band_freqs = [band["frequency"] for band in phonon["band"]]
         frequencies.append(band_freqs)
 
-    distances = np.array(distances, dtype=float)
-    qpoints = np.array(qpoints, dtype=float)
-    frequencies = np.array(frequencies, dtype=float)
+    distances = np.array(distances, dtype=np.float32)
+    qpoints = np.array(qpoints, dtype=np.float32)
+    frequencies = np.array(frequencies, dtype=np.float32)
 
     min_frequency = float(np.min(frequencies))
     max_frequency = float(np.max(frequencies))
@@ -202,6 +213,9 @@ def load_band_yaml(yaml_path):
         "is_stable": bool(num_imaginary == 0),
         "gamma_acoustic_frequencies": acoustic_gamma,
         "gamma_optical_frequencies": optical_gamma,
+        "source": source,
+        "sort_by": sort_by,
+        "sort_score": np.nan if sort_score is None else float(sort_score),
     }
 
 
